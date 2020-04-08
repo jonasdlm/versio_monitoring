@@ -1,14 +1,12 @@
 #!/bin/bash
 # Script name:          versio_disk_space.sh
-# Version:              v1.01.200408
+# Version:              v1.01.20200408
 # Created on:           08/04/2020
 # Author:               Jonas De la Marche
 # Purpose:              Bash script that checks available diskspace on Versio shared hosting
-# On GitHub:            h
+# On GitHub:            https://github.com/jonasdlm/versio_monitoring/blob/master/versio_disk_space.sh
 
 diskspace=$(du -hs)
-
-echo "Diskspace is $diskspace"
 
 if [ "$diskspace" -gt "28000000" ];
         then
